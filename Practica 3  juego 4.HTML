@@ -1,0 +1,188 @@
+jj<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina principal practica 3</title>
+  <BODY BGCOLOR="SILVER" TEXT="BLACK">
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .box {
+      width: 500px;
+      height: 200px;
+      background-color: green;
+      text-align: center;
+      line-height: 200px;
+      color: white;
+      font-weight: bold;
+    }
+    .photo {
+      width: 400px;
+      height: 200px;
+    }
+
+.cuadro {
+  width: 200px; /* Ancho del cuadro */
+  height: 150px; /* Altura del cuadro */
+  padding: 10px; /* Espacio interno para el texto */
+  border: 1px solid #ccc; /* Borde del cuadro */
+  margin: 10px; /* Espacio entre cuadros */
+  display: inline-block; /* Permite que los cuadros se dispongan en fila */
+  text-align: center; /* Centra el texto horizontalmente */
+  vertical-align: top; /* Alinea los elementos verticalmente */
+  justify-content: space-between;
+   align-items: center;
+}
+
+/* Estilos para cada cuadro */
+.cuadro-rojo {
+  background-color: #ff0000; /* Rojo */
+  color: white; /* Texto blanco */
+   justify-content: space-between;
+      align-items: center;
+}
+
+.cuadro-verde {
+  background-color: #00ff00; /* Verde */
+  color: black; /* Texto negro */
+   
+}
+
+.cuadro-azul {
+  background-color: #0000ff; /* Azul */
+  color: white; /* Texto blanco */
+   
+}
+
+.cuadro-amarillo {
+  background-color: #ffff00; /* Amarillo */
+  color: black; /* Texto negro */
+  
+}
+
+
+.cuadro-salmon {
+  background-color:#FA8072; /* Olivo */
+  color: white; /* Texto blanco */
+  float: right;
+}
+
+.cuadro-olivo {
+  background-color:#808000; /* Olivo */
+  color: black; /* Texto negro */
+  float: right;
+}
+.cuadro a {
+  color: inherit; /* El color del texto será el color de fondo del cuadro */
+  text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+.cuadro a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+        .centrado {
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px; /* Puedes ajustar el tamaño según tus necesidades */
+        }
+
+
+
+        function search() {
+            const query = document.getElementById('searchQuery').value;
+            if (query) {
+                const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+                window.open(url, '_blank');
+            } else {
+                alert('Por favor, escribe algo para buscar.');
+            }
+    .container {
+      display: flex;
+      justify-content: space-between; /* Espaciado uniforme entre cuadros */
+      align-items: center; /* Alineación vertical */
+      margin: 20px;
+    }
+    .box {
+      width: 500px;
+      height: 200px;
+      background-color: #4CAF50; /* Color verde */
+      margin: 10px;
+      text-align: center;
+      line-height: 100px; /* Centrar texto verticalmente */
+      color: white;
+      font-weight: bold;
+      border-radius: 8px; /* Bordes redondeados */
+      font-size: 35px;
+    }
+  </style>
+
+<body>
+  </div>
+     <div class="container">
+    <img class="photo" src="C:\Users\antonio\OneDrive\Pictures\Documents\Pactica tix\Imagenes\juegos de mesa.jpg" alt="Foto de ejemplo">
+
+   <div class="anuncio">
+        <img src="C:\Users\antonio\OneDrive\Pictures\Documents\Pactica tix\Imagenes\Uno no mercy.jpg" alt="Producto">
+        <h1>¡Oferta Especial!</h1>
+        <p>Compra ahora y obtén un 20% de descuento en todos nuestros productos. ¡No te lo pierdas!</p>
+        <a href="#">Comprar Ahora</a>
+
+  </div>
+ <div class="cuadro cuadro-salmon">
+    <h2>Inicio</h2>
+    <a href="file:///C:/Users/antonio/OneDrive/Pictures/Documents/Pactica%20tix/index.HTLM.HTML">Enlace</a>
+ </div>
+
+  <style>
+    .cuadro-texto {
+      width: 1500px; /* Ancho del cuadro */
+      height: 150px; /* Alto del cuadro */
+      border: 2px solid #4CAF50; /* Color y grosor del borde */
+      padding: 10px; /* Espaciado interno */
+      overflow-y: scroll; /* Barra de desplazamiento vertical */
+      background-color: #f9f9f9; /* Color de fondo */
+      border-radius: 5px; /* Bordes redondeados (opcional) */
+    }
+  </style>
+  </div>
+ <h2>Reglas del juego Ajedrez</h2>
+  <div class="cuadro-texto">
+•  Configuración del tablero: Se juega en un tablero de 64 casillas (8x8), con piezas blancas y negras. La casilla inferior derecha debe ser blanca.
+•  Movimientos de las piezas:
+•	Peón: Avanza una casilla, pero captura en diagonal. En su primer movimiento, puede avanzar dos casillas.
+•	Torre: Se mueve en línea recta, horizontal o verticalmente.
+•	Caballo: Se mueve en forma de "L" y puede saltar sobre otras piezas.
+•	Alfil: Se mueve en diagonal sin límite de casillas.
+•	Dama: La pieza más poderosa, combina los movimientos de la torre y el alfil.
+•	Rey: Se mueve una casilla en cualquier dirección. No puede moverse a una casilla donde quedaría en jaque.
+•  Objetivo del juego: Dar jaque mate al rey del oponente, es decir, atacarlo de manera que no pueda escapar.
+•  Reglas especiales:
+•	Enroque: Movimiento especial del rey y una torre para mejorar la defensa.
+•	Captura al paso: Regla especial para los peones cuando el oponente mueve un peón dos casillas desde su posición inicial.
+•	Coronación de peón: Si un peón llega al otro extremo del tablero, puede convertirse en otra pieza (generalmente una dama).
+•  Final de la partida: Se gana con jaque mate, por rendición del oponente o por empate (tablas).
+
+  </div>
+  </div>
+ <div class="container">
+  <div class="cuadro cuadro-azul">
+    <h2>Origen del Juego</h2>
+    <a href="https://es.wikipedia.org/wiki/Historia_del_ajedrez">Enlace</a>
+  </div>
+    <div class="container">
+ <div class="cuadro cuadro-olivo">
+    <h2>Comprar juego</h2>
+    <a href="https://www.ebay.com/itm/387215626062?chn=ps&norover=1&mkevt=1&mkrid=711-170539-829218-7&mkcid=2&itemid=387215626062&targetid=4580221859120580&device=c&mktype=&googleloc=&poi=&campaignid=484389146&mkgroupid=1225956503607137&rlsatarget=pla-4580221859120580&abcId=9402330&merchantid=3496964&msclkid=c4719510758d1049509bfd26e67d4c79">Enlace </a>
+ </div>
+  <div class="container">
+    <div class="box">Juegos de mesa</div>
+  </div>
+
+<img class="photo" src="C:\Users\antonio\OneDrive\Pictures\Documents\Pactica tix\Imagenes\Ajedrez.jpg" alt="Foto de ejemplo">
+  </div>
+</body>
+</html>
